@@ -7,10 +7,10 @@
 #*Пример:*
 #**Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да    
 #    **Вывод:** Парам пам-пам 
-def print_operation_table(operation, num_rows=6, num_columns=6):
-    for i in range(1,num_rows+1):
-        for j in range(1,num_columns+1):
-            print(operation(i,j), end="\t")
+def print_operation_table(operation, num_rows = 6, num_columns = 6):
+    for i in range(1,num_rows + 1):
+        for j in range(1,num_columns + 1):
+            print(operation(i,j), end = "\t")
         print("")
 
 
@@ -31,12 +31,12 @@ def print_operation_table(operation, num_rows=6, num_columns=6):
 #6 12 18 24 30 36
 
 def print_operation_table(operation, num_rows=6, num_columns=6):
-    for i in range(1, num_rows+1):
-        for j in range(1, num_columns+1):
-            print("{0} \t".format(operation(i, j)), end="")
+    for i in range(1, num_rows + 1):
+        for j in range(1, num_columns + 1):
+            print("{0} \t".format(operation(i, j)), end = "")
         print()
 
 def multiply(x, y):
-    return x*y
+    return x * y
 
 print_operation_table(multiply)
